@@ -22,5 +22,5 @@ package() {
   mv ayo.toml $pkgdir/etc/ayo.toml
   mv examples $pkgdir/etc/ayo.d
   mv target/release/ayo $pkgdir/usr/bin/
-  mv ayo.service /etc/systemd/system/
+  mv ayo.service $pkgdir/etc/systemd/system/
 }
