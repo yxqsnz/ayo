@@ -1,0 +1,8 @@
+[group.high-prio]
+io_class = { Realtime = 0 }
+nice = -20
+
+
+[group.desktop]
+io_class = { BestEffort = 2 }
+nice = -17

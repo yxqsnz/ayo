@@ -1,0 +1,7 @@
+[[rule]]
+process = "/usr/bin/kwin_x11"
+group = "desktop"
+
+[[rule]]
+process = "/usr/bin/plasmashell"
+group = "desktop"

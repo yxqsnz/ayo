@@ -1,0 +1,3 @@
+[[rule]]
+process = "/usr/bin/earlyoom"
+group = "high-prio"

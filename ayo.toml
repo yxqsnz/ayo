@@ -1,0 +1,4 @@
+# Main config file
+# This should be in /etc/ayo.toml
+
+poll_interval = 15 # In seconds
