@@ -1,0 +1,24 @@
+[Unit]
+Description=A simple nic daemon.
+After=local-fs.target
+
+[Service]
+Type=notify
+ExecStartPre=/sbin/sysctl -e kernel.sched_autogroup_enabled=0
+ExecStart=/usr/bin/ayo 
+ExecStopPost=/sbin/sysctl -e kernel.sched_autogroup_enabled=1
+Nice=19
+SuccessExitStatus=143
+OOMScoreAdjust=-999
+Restart=always
+CPUAccounting=true
+MemoryHigh=8M
+MemoryMax=16M
+ProtectSystem=true
+ProtectHome=true
+PrivateTmp=yes
+
+[Install]
+WantedBy=local-fs.target
+
+# vi: ft=systemd
